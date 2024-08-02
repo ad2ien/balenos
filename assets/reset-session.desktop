@@ -1,0 +1,7 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=/home/personne/reset-session.sh
+Name=Reset Session
+Comment=Reset Session

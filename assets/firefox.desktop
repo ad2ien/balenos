@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=firefox --private-window
+Name=Firefox
+Comment=Firefox
+Icon=firefox
+Categories=WebBrowser;
