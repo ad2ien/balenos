@@ -1,10 +1,10 @@
 # Baleinos
 
+🇫🇷 [Guide en francais](README-fr.md) 🥖
+
 This repo holds assets, scripts and documentation of a [Lubuntu](https://lubuntu.me/) customization meant to be used by french administration or associations that want to offer their users a self attending station for administrative procedures.
 
-- wiki will be in french
-
-## Guide
+## Install guide
 
 - Install lubuntu <https://lubuntu.me/downloads/>
   - french local
