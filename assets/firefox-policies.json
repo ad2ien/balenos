@@ -1,0 +1,12 @@
+{
+  "policies": {
+    "DisableFirefoxAccounts": true,
+    "AutofillAddressEnabled": true,
+    "AutofillCreditCardEnabled": true,
+    "BlockAboutAddons": true,
+    "BlockAboutConfig": true,
+    "BlockAboutProfiles": true,
+    "BlockAboutSupport": true,
+    "NoDefaultBookmarks": true
+  }
+}

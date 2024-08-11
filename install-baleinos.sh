@@ -40,6 +40,10 @@ sudo chown -R $USER_NAME:$PASSWORD /home/$USER_NAME/
 sudo chmod +x /home/$USER_NAME/user-install.sh
 sudo chmod +x /home/$USER_NAME/user-config-firefox.sh
 
+echo "Firefox policies"
+sudo mkdir -p /etc/firefox/policies
+sudo cp assets/firefox-policies.json /etc/firefox/policies/policies.json
+
 echo "Execute configuration scripts for the final user..."
 sudo -i -u $USER_NAME ./user-install.sh
 sudo -i -u $USER_NAME ./user-config-firefox.sh
