@@ -7,6 +7,25 @@
     "BlockAboutConfig": true,
     "BlockAboutProfiles": true,
     "BlockAboutSupport": true,
-    "NoDefaultBookmarks": true
-  }
+    "NoDefaultBookmarks": true,
+    "DisableProfileImport": true,
+    "DisableSetDesktopBackground": true,
+    "DisableTelemetry": true,
+    "DisplayBookmarksToolbar": "newtab",
+    "DisplayMenuBar": "never",
+    "EnableTrackingProtection": true,
+    "OfferToSaveLogins": false,
+    "PasswordManagerEnabled": false,
+    "SanitizeOnShutdown": {
+      "Cache": true,
+      "Cookies": true,
+      "Downloads": true,
+      "FormData": true,
+      "History": true,
+      "Sessions": true,
+      "SiteSettings": true,
+      "OfflineApps": true,
+      "Locked": true
+    }
+    }
 }
