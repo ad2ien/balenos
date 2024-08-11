@@ -32,11 +32,16 @@ Session=Lubuntu
 " > sddm.conf
 sudo cp -f sddm.conf /etc/sddm.conf
 
+echo "copy admin assets..."
+# TODO replace user name
+cp admin-assets/transfer-bookmarks.desktop ~/Desktop
+chmod +x admin-assets/transfer-bookmarks.sh
+
 echo "copy assets, and set rights..."
 sudo mkdir -p /home/$USER_NAME/baleinos-assets
 sudo cp assets/* /home/$USER_NAME/baleinos-assets/
 sudo cp assets/user-*.sh /home/$USER_NAME/
-sudo chown -R $USER_NAME:$PASSWORD /home/$USER_NAME/
+sudo chown -R $USER_NAME:$USER_NAME /home/$USER_NAME/
 sudo chmod +x /home/$USER_NAME/user-install.sh
 sudo chmod +x /home/$USER_NAME/user-config-firefox.sh
 

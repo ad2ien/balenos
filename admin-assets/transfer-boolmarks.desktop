@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+Exec=~/baleinos/admin-assets/transfer-bookmarks.sh
+Name=Transfert de marque-pages
+Comment=Transfère les marque-pages sur le profil utilisateur
+Icon=
+Categories=WebBrowser;

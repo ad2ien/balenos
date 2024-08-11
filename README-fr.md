@@ -17,4 +17,10 @@ Ce dépôt contient les assets, scripts et documentation d'une [customisation de
 
 ## Configurer les raccourcis
 
+- connectez vous en tant qu'admin
+- démarrez Firefox
+- créez et organisez les raccourcis comme vous voulez qu'ils apparaissent pour les utilisateurs
+- fermez Firefox
+- cliquez sur le raccourcis `Transfert de marque-pages` sur le bureau
+
 ## Listes blanche ou noires
