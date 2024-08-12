@@ -1,6 +1,23 @@
 # Baleinos
 
-Ce dépôt contient les assets, scripts et documentation d'une [customisation de Lubuntu](https://lubuntu.me/) conçue pour être utilisée par des structures qui souhaitent proposer à leurs utilisateurices une station auto-service d'accès à internet.
+Ce dépôt contient les assets, scripts et documentation d'une customisation de [Lubuntu](https://lubuntu.me/) conçue pour être utilisée par des structures qui souhaitent proposer à leurs utilisateurices une station auto-service d'accès à internet.
+
+## Cas d'usage
+
+### Pour les utilisateurices
+
+- Pouvoir disposer d'un navigateur internet
+  - respectant la vie privée
+  - UX fluide grace à des performances correctes
+- Avoir à disposition un bouton qui permet d'effacer toute trace de son passage
+
+### Pour les admins
+
+- Pouvoir utiliser un PC vieillissant
+- Pouvoir configurer la station pour s'adapter au mieux dans au contexte d'utilisation. Tout en empêchant les utilisateurs finaux de modifier ces réglages:
+  - éditer les marques pages
+  - avoir la possibilité d'avoir des white ou black listes de sites
+  - régler la page d'accueil, outil de recherche par défaut...
 
 ## Guide d'installation
 
