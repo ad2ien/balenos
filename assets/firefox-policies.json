@@ -26,6 +26,30 @@
       "SiteSettings": true,
       "OfflineApps": true,
       "Locked": true
+    },
+    "FirefoxHome": {
+      "Search": false,
+      "TopSites": false,
+      "SponsoredTopSites": false,
+      "Highlights": false,
+      "Pocket": false,
+      "SponsoredPocket": false,
+      "Snippets": false,
+      "Locked": true
+    },
+    "UserMessaging": {
+      "ExtensionRecommendations": false,
+      "FeatureRecommendations": false,
+      "UrlbarInterventions": false,
+      "SkipOnboarding": false,
+      "MoreFromMozilla": false,
+      "Locked": true
+    },
+    "Homepage": {
+      "URL": "http://github.com/ad2ien/baleinos",
+      "Locked": true,
+      "Additional": [],
+      "StartPage": "homepage"
     }
-    }
+  }
 }
