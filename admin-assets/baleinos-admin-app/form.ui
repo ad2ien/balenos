@@ -97,7 +97,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Supprimer les policies firefox (les utilisateurs peuvent modifier Firefox)</string>
+     <string>Désactiver les policies firefox (les utilisateurs peuvent modifier Firefox)</string>
     </property>
    </widget>
    <widget class="QLabel" name="exisintg_policies_file_label">
@@ -144,12 +144,12 @@
      <rect>
       <x>40</x>
       <y>640</y>
-      <width>161</width>
+      <width>251</width>
       <height>26</height>
      </rect>
     </property>
     <property name="text">
-     <string>Sauvegarder</string>
+     <string>Sauvegarder les policies Firefox</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="homepage_edit">
@@ -163,6 +163,29 @@
     </property>
     <property name="placeholderText">
      <string>https://impots.gouv.fr</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>254</y>
+      <width>151</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Moteur de recherche:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="engine_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>250</y>
+      <width>371</width>
+      <height>26</height>
+     </rect>
     </property>
    </widget>
   </widget>

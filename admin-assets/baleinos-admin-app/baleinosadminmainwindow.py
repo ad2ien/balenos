@@ -46,6 +46,12 @@ def disable_firefox_policies():
     os.rename(POLICIES_FILE, POLICIES_BACKUP)
     return True
 
+def get_configured_searchengine_list(json):
+    engine_array = json["policies"]["SearchEngines"]["Add"]
+    return [engine["Name"] for engine in engine_array]
+
+def get_default_search_engine(json):
+    return json["policies"]["SearchEngines"]["Default"]
 
 def display_error(text, e=None):
     print(text,e)
@@ -71,6 +77,8 @@ class BaleinosAdmin(QApplication):
         self.window.remove_policy_button.clicked.connect(disable_firefox_policies)
         self.window.save_button.clicked.connect(self.save_firefox_policies)
         self.window.homepage_edit.setText(get_homepage(self.json_policy))
+        self.window.engine_comboBox.addItems(get_configured_searchengine_list(self.json_policy))
+        self.window.engine_comboBox.setCurrentText(get_default_search_engine(self.json_policy))
         if self.json_policy is None:
             self.window.message_content_label.setText("Firefox policies.json does not exist")
 
@@ -79,10 +87,10 @@ class BaleinosAdmin(QApplication):
 
         # update json from form
         self.json_policy["policies"]["Homepage"]["URL"] = self.window.homepage_edit.text()
+        self.json_policy["policies"]["SearchEngines"]["Default"] = self.window.engine_comboBox.currentText()
 
         try:
             with open(POLICIES_FILE, 'w') as outfile:
-                print(self.json_policy)
                 outfile.write(json.dumps(self.json_policy, indent=2))
             self.window.message_content_label.setText("policies Firefox sauvegardées 👏👏")
         except Exception as e:

@@ -18,3 +18,9 @@ pip install -r requirements.txt
 # start project
 python baleinosadminmainwindow.py
 ```
+
+## TODO
+
+- [ ] transfer of bookmarks
+- [ ] doc
+- [ ] white or black list
