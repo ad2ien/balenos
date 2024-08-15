@@ -14,6 +14,22 @@
     "DisplayBookmarksToolbar": "newtab",
     "DisplayMenuBar": "never",
     "EnableTrackingProtection": true,
+    "FirefoxHome": {
+      "Search": false,
+      "TopSites": false,
+      "SponsoredTopSites": false,
+      "Highlights": false,
+      "Pocket": false,
+      "SponsoredPocket": false,
+      "Snippets": false,
+      "Locked": true
+    },
+    "Homepage": {
+      "URL": "https://www.wikipedia.fr/",
+      "Locked": true,
+      "Additional": [],
+      "StartPage": "homepage"
+    },
     "OfferToSaveLogins": false,
     "PasswordManagerEnabled": false,
     "SanitizeOnShutdown": {
@@ -27,16 +43,58 @@
       "OfflineApps": true,
       "Locked": true
     },
-    "FirefoxHome": {
-      "Search": false,
-      "TopSites": false,
-      "SponsoredTopSites": false,
-      "Highlights": false,
-      "Pocket": false,
-      "SponsoredPocket": false,
-      "Snippets": false,
-      "Locked": true
+    "SearchEngines": {
+      "PreventInstalls": true,
+      "Add": [
+        {
+					"Name": "Google FR",
+					"URLTemplate": "https://www.google.fr/search?client=firefox&hl=fr&gl=gb&pws=0q={searchTerms}",
+					"Method": "GET",
+					"IconURL": "https://www.google.fr/favicon.ico",
+					"Alias": "g",
+					"Description": "Google FR",
+					"PostData": "name=value&q={searchTerms}",
+					"SuggestURLTemplate": "https://suggestqueries.google.com/complete/search?client=firefox&hl=fr&gl=gb&pws=0&q={searchTerms}"
+				},
+        {
+					"Name": "Ecosia",
+					"Alias": "e",
+					"Description": "Ecosia Search Engine",
+					"IconURL": "https://cdn-static.ecosia.org/static/icons/favicon.ico",
+					"Method": "GET",
+					"SuggestURLTemplate": "https://ac.ecosia.org/autocomplete?q={searchTerms}",
+					"URLTemplate": "https://www.ecosia.org/search?q={searchTerms}&addon=firefoxgpo"
+				},
+        {
+					"Name": "DuckDuckGo",
+					"Alias": "d",
+					"Description": "Minimal, ad-free version of DuckDuckGo",
+					"IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
+					"Method": "POST",
+					"PostData": "q={searchTerms}",
+					"SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
+					"URLTemplate": "https://duckduckgo.com/lite/?q={searchTerms}"
+				},
+        {
+          "Name": "Qwant",
+          "URLTemplate": "https://www.qwant.com/?q={searchTerms}&client=opensearch",
+          "IconURL": "https://www.qwant.com/favicon.ico",
+          "Alias": "Qwant",
+          "PostData": "name=value&q={searchTerms}",
+          "SuggestURLTemplate": "https://api.qwant.com/api/suggest/?q={searchTerms}&client=opensearch"
+        }
+      ],
+       "Default": "Qwant",
+       "Remove": [
+        "Bing",
+        "eBay",
+        "Youtube",
+        "Facebook",
+        "leboncoin",
+        "Twitter"
+       ]
     },
+    "SearchSuggestEnabled": false,
     "UserMessaging": {
       "ExtensionRecommendations": false,
       "FeatureRecommendations": false,
@@ -44,12 +102,6 @@
       "SkipOnboarding": false,
       "MoreFromMozilla": false,
       "Locked": true
-    },
-    "Homepage": {
-      "URL": "http://github.com/ad2ien/baleinos",
-      "Locked": true,
-      "Additional": [],
-      "StartPage": "homepage"
     }
   }
 }
