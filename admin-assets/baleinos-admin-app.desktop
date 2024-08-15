@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+Exec=/home/admin/baleinos/admin-assets/baleinos-admin-app/start_baleinos_admin_tool.sh
+Name=Baleinos admin tool
+Comment=Configure le profil utilisateur
+Icon=
+Categories=AdminTool;

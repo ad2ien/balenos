@@ -6,6 +6,13 @@ PASSWORD=$USER_NAME
 
 echo "// Welcome to Baleinos installation 🐳"
 
+echo "Remplace Firefox par Firefox-esr"
+firefox_version=$(firefox --version)
+if [[ $firefox_version != *esr ]] ; then
+  sudo snap remove firefox
+  sudo snap install firefox --channel=esr/stable
+fi
+
 # if user don't exists
 if id -u $USER_NAME > /dev/null 2>&1; then
   echo "Utilisateur créé : étape suivante"
@@ -17,6 +24,7 @@ else
   sudo -i -u $USER_NAME bash << EOF
     firefox &
 EOF
+  # TODO find a way to fake a first login
   echo "Démarrez un session en tant que '$USER_NAME'"
   echo "  - Démarrer / quitter / déconnecter"
   echo "  - Sélectionner '$USER_NAME' (mot de passe: '$PASSWORD')"
@@ -32,11 +40,6 @@ Session=Lubuntu
 " > sddm.conf
 sudo cp -f sddm.conf /etc/sddm.conf
 
-echo "copy admin assets..."
-# TODO replace user name
-cp admin-assets/transfer-bookmarks.desktop ~/Desktop
-chmod +x admin-assets/transfer-bookmarks.sh
-
 echo "copy assets, and set rights..."
 sudo mkdir -p /home/$USER_NAME/baleinos-assets
 sudo cp assets/* /home/$USER_NAME/baleinos-assets/
@@ -48,6 +51,14 @@ sudo chmod +x /home/$USER_NAME/user-config-firefox.sh
 echo "Firefox policies"
 sudo mkdir -p /etc/firefox/policies
 sudo cp assets/firefox-policies.json /etc/firefox/policies/policies.json
+
+# Baleinos Admin tool
+sudo apt install -y python3-pip
+sudo apt install -y python3-venv
+sudo apt install libxcb-cursor0
+chmod +x /home/$SUDO_USER/baleinos/admin-assets/baleinos-admin-app/start_baleinos_admin_tool.sh
+cp admin-assets/baleinos-admin-app.desktop /home/$SUDO_USER/Desktop
+chmod +x /home/$SUDO_USER/Desktop/baleinos-admin-app.desktop
 
 echo "Execute configuration scripts for the final user..."
 sudo -i -u $USER_NAME ./user-install.sh

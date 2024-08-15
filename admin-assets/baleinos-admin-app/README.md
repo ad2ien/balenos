@@ -21,6 +21,10 @@ python baleinosadminmainwindow.py
 
 ## TODO
 
-- [ ] transfer of bookmarks
-- [ ] doc
+- [ ] doc inside
 - [ ] white or black list
+- [ ] icon
+- [ ] emojis on lubuntu 😿
+- [ ] quit / about menu
+- [ ] name instead of "python" in task bar
+- [ ] separate repo : test, lint, releases...
