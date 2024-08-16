@@ -1,5 +1,8 @@
 # Baleinos
 
+![Gitmoji](https://img.shields.io/badge/gitmoji-%20%F0%9F%98%9C%20%F0%9F%98%8D-FFDD67.svg)
+![License](https://img.shields.io/badge/license-GNU-blue.svg?logo=GNU)
+
 Ce dépôt contient les assets, scripts et documentation d'une customisation de [Lubuntu](https://lubuntu.me/) conçue pour être utilisée par des structures qui souhaitent proposer à leurs utilisateurices une station auto-service d'accès à internet.
 
 ## Cas d'usage
@@ -14,30 +17,47 @@ Ce dépôt contient les assets, scripts et documentation d'une customisation de 
 ### Pour les admins
 
 - Pouvoir utiliser un PC vieillissant
-- Pouvoir configurer la station pour s'adapter au mieux dans au contexte d'utilisation. Tout en empêchant les utilisateurs finaux de modifier ces réglages:
-  - éditer les marques pages
-  - avoir la possibilité d'avoir des white ou black listes de sites
-  - régler la page d'accueil, outil de recherche par défaut...
+- Pouvoir configurer la station pour s'adapter au mieux au contexte d'utilisation. Tout en empêchant les utilisateurs finaux de modifier les réglages tels que:
+  - les marques pages
+  - la page d'accueil, outil de recherche par défaut...
+- avoir la possibilité d'avoir des white ou black listes de sites
+- pouvoir facilement ajouter des customisations, installer des application, changer l'interface... 
 
-## Guide d'installation
+## Comment ça marche ?
+
+- le [script d'installation](install-baleinos.sh) crée un utilisateur linux qui sera automatiquement connecté
+- la barre des tâches et le bureau sont simplifiés
+- un Firefox en navigation privé est lancé au démarrage
+- sur le compte administrateur, [l'outil d'administration Baleinos](admin-assets/baleinos-admin-app/README.md) est installé
+
+## Comment utiliser
 
 - Installez Lubuntu <https://lubuntu.me/downloads/>
-  - localisation française
+  - langue française
   - sans chiffrement du disque
   - créez un utilisateur `admin` avec un mot de passe sécurisé
-
 - Connectez-vous avec l'utilisateur admin
 - Copiez le contenu de ce dépôt dans le répertoire personnel d'admin
-- Ouvrez une console et `cd baleinos`
+- Ouvrez un terminal `CTRL + ALT + T` et tapez `cd baleinos`
 - Exécutez `chmod +x install-baleinos.sh && ./install-baleinos.sh`
 - Suivez les instructions
 
-## Configurer les raccourcis
+### Configurer Firefox
+
+- Vous pouvez configurer la page d'accueil et le moteur de recherche grâce à [Baleinos admin app](admin-assets/baleinos-admin-app/README.md) un raccourcis est présent sur le Bureau
+- Pour personnaliser davantage, utilisez le fichier `/etc/firefox/policies/policies.json` <https://mozilla.github.io/policy-templates/>
+
+### Configurer les marque-pages
 
 - connectez vous en tant qu'admin
 - démarrez Firefox
-- créez et organisez les raccourcis comme vous voulez qu'ils apparaissent pour les utilisateurs
+- créez et organisez les raccourcis comme vous voulez qu'ils apparaissent pour les utilisateurices
 - fermez Firefox
-- cliquez sur le raccourcis `Transfert de marque-pages` sur le bureau
+- lancez l'application d'administration _Baleinos admin app_ et cliquez sur le bouton _transférer les marque-pages_
 
-## Listes blanche ou noires
+## Comment contribuer ❤️
+
+- Une étoile me ferait déjà bien plaisir ⭐
+- Si ce repo peut vous être utile, je suis friand de vos idées et vos besoins spécifiques, peut-être par email : _contact_ at _ad2ien.dev_
+- Vous pouvez aussi me demander de venir l'installer chez vous 😜
+- Toute plainte ou demande de développement ou contribution peut être discutée dans la partie [issues](https://github.com/ad2ien/baleinos/issues).

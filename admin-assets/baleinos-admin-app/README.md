@@ -1,27 +1,23 @@
 # Baleinos admin app
 
-Manage and edit firefox policies
+Manage and edit Firefox policies in `/etc/firefox/policies/policies.json` <https://mozilla.github.io/policy-templates/> for ubuntu distributions
+
+- Set homepage and search engine
+- activate or deactivate Firefox policies for all users
+- Transfer bookmarks to another user
 
 ## Dev
 
-- python Qt application
-- form.ui edited with [QtCreator](https://doc.qt.io)
+- This is python Qt application
+- form.ui is edited with [QtCreator](https://doc.qt.io)
 
-### Start
+## Start
 
-```bash
-# init env
-python -m venv ./venv
-source ./venv/bin/activate
-pip install -r requirements.txt
-
-# start project
-python baleinosadminmainwindow.py
-```
+By running [./start_baleinos_admin_tool.sh](start_baleinos_admin_tool.sh) after `chmod +x start_baleinos_admin_tool.sh`
 
 ## TODO
 
-- [ ] doc inside
+- [ ] doc inside the app
 - [ ] white or black list
 - [ ] icon
 - [ ] emojis on lubuntu 😿
