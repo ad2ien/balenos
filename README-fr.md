@@ -1,4 +1,4 @@
-# Baleinos
+# Balenos
 
 ![Gitmoji](https://img.shields.io/badge/gitmoji-%20%F0%9F%98%9C%20%F0%9F%98%8D-FFDD67.svg)
 ![License](https://img.shields.io/badge/license-GNU-blue.svg?logo=GNU)
@@ -25,10 +25,10 @@ Ce dépôt contient les assets, scripts et documentation d'une customisation de 
 
 ## Comment ça marche ?
 
-- le [script d'installation](install-baleinos.sh) crée un utilisateur linux qui sera automatiquement connecté
+- le [script d'installation](install-balenos.sh) crée un utilisateur linux qui sera automatiquement connecté
 - la barre des tâches et le bureau sont simplifiés
 - un Firefox en navigation privé est lancé au démarrage
-- sur le compte administrateur, [l'outil d'administration Baleinos](admin-assets/baleinos-admin-app/README.md) est installé
+- sur le compte administrateur, [l'outil d'administration Balenos](admin-assets/balenos-admin-app/README.md) est installé
 
 ## Comment utiliser
 
@@ -38,13 +38,13 @@ Ce dépôt contient les assets, scripts et documentation d'une customisation de 
   - créez un utilisateur `admin` avec un mot de passe sécurisé
 - Connectez-vous avec l'utilisateur admin
 - Copiez le contenu de ce dépôt dans le répertoire personnel d'admin
-- Ouvrez un terminal `CTRL + ALT + T` et tapez `cd baleinos`
-- Exécutez `chmod +x install-baleinos.sh && ./install-baleinos.sh`
+- Ouvrez un terminal `CTRL + ALT + T` et tapez `cd balenos`
+- Exécutez `chmod +x install-balenos.sh && ./install-balenos.sh`
 - Suivez les instructions
 
 ### Configurer Firefox
 
-- Vous pouvez configurer la page d'accueil et le moteur de recherche grâce à [Baleinos admin app](admin-assets/baleinos-admin-app/README.md) un raccourcis est présent sur le Bureau
+- Vous pouvez configurer la page d'accueil et le moteur de recherche grâce à [Balenos admin app](admin-assets/balenos-admin-app/README.md) un raccourcis est présent sur le Bureau
 - Pour personnaliser davantage, utilisez le fichier `/etc/firefox/policies/policies.json` <https://mozilla.github.io/policy-templates/>
 
 ### Configurer les marque-pages
@@ -53,11 +53,11 @@ Ce dépôt contient les assets, scripts et documentation d'une customisation de 
 - démarrez Firefox
 - créez et organisez les raccourcis comme vous voulez qu'ils apparaissent pour les utilisateurices
 - fermez Firefox
-- lancez l'application d'administration _Baleinos admin app_ et cliquez sur le bouton _transférer les marque-pages_
+- lancez l'application d'administration _Balenos admin app_ et cliquez sur le bouton _transférer les marque-pages_
 
 ## Comment contribuer ❤️
 
 - Une étoile me ferait déjà bien plaisir ⭐
 - Si ce repo peut vous être utile, je suis friand de vos idées et vos besoins spécifiques, peut-être par email : _contact_ at _ad2ien.dev_
 - Vous pouvez aussi me demander de venir l'installer chez vous 😜
-- Toute plainte ou demande de développement ou contribution peut être discutée dans la partie [issues](https://github.com/ad2ien/baleinos/issues).
+- Toute plainte ou demande de développement ou contribution peut être discutée dans la partie [issues](https://github.com/ad2ien/balenos/issues).

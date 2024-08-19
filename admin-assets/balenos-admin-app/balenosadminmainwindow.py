@@ -7,7 +7,7 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox
 from PySide6.QtUiTools import QUiLoader
 
 POLICIES_PATH="/etc/firefox/policies/"
-POLICIES_INIT_FILE="/home/admin/baleinos/assets/firefox-policies.json"
+POLICIES_INIT_FILE="/home/admin/balenos/assets/firefox-policies.json"
 POLICIES_BACKUP= POLICIES_PATH + "policies.json.bak"
 
 USER_ACCOUNT="personne"
@@ -88,7 +88,7 @@ def move_bookmarks_to_user_profile(target_user):
 def get_default_folder(folder_array):
     return [folder for folder in folder_array if ".default" in folder][0]
 
-class BaleinosAdmin(QApplication):
+class BalenosAdmin(QApplication):
     def __init__(self, argv):
         super().__init__(argv)
 
@@ -157,6 +157,6 @@ class BaleinosAdmin(QApplication):
         sys.exit(self.exec())
 
 if __name__ == "__main__":
-    app = BaleinosAdmin(sys.argv)
+    app = BalenosAdmin(sys.argv)
     app.run()
 

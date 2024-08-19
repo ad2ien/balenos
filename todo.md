@@ -1,11 +1,11 @@
-# Baleinos TODO list
+# Balenos TODO list
 
 ## General
 
 - [x] how to contribute
 - [ ] Logo and minimum graphics for the project
 - [ ] Register to Adullact catalog
-- [ ] why Baleinos and why the name should change
+- [ ] why Balenos and why the name should change
 - [ ] ransacking tests
 
 ### Admin config
@@ -14,7 +14,7 @@
   - [ ] bloquer edition de racourcis
   - [ ] icone pour admin app
 - [ ] white or black list doc
-- [ ] Baleinos admin markdown guide shortcut
+- [ ] Balenos admin markdown guide shortcut
 
 ## Bouton reset session
 

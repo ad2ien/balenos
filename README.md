@@ -1,4 +1,4 @@
-# Baleinos
+# Balenos
 
 ![Gitmoji](https://img.shields.io/badge/gitmoji-%20%F0%9F%98%9C%20%F0%9F%98%8D-FFDD67.svg)
 ![License](https://img.shields.io/badge/license-GNU-blue.svg?logo=GNU)
@@ -27,10 +27,10 @@ This repo holds assets, scripts and documentation of a [Lubuntu](https://lubuntu
 
 ## How does it work?
 
-- the [install script](install-baleinos.sh) creates a linux user that will be auto logged in.
+- the [install script](install-balenos.sh) creates a linux user that will be auto logged in.
 - the taskbar and desktop is simplified
 - a private Firefox is launched at startup
-- on the admin account, [Baleinos admin tool](admin-assets/baleinos-admin-app/README.md) is installed
+- on the admin account, [Balenos admin tool](admin-assets/balenos-admin-app/README.md) is installed
 
 ## How to use
 
@@ -43,12 +43,12 @@ This repo holds assets, scripts and documentation of a [Lubuntu](https://lubuntu
 
 - login to admin
 - copy the content of this repo in admin home directory
-- start a terminal and `cd baleinos`
-- run `chmod +x install-baleinos.sh && ./install-baleinos.sh`
+- start a terminal and `cd balenos`
+- run `chmod +x install-balenos.sh && ./install-balenos.sh`
 
 ### Configure Firefox
 
-- You can configure the homepage and search engine thanks to [Baleinos admin app](admin-assets/baleinos-admin-app/README.md)
+- You can configure the homepage and search engine thanks to [Balenos admin app](admin-assets/balenos-admin-app/README.md)
 - To customize further use the file `/etc/firefox/policies/policies.json` <https://mozilla.github.io/policy-templates/>
 
 ### Configure bookmarks
@@ -57,7 +57,7 @@ This repo holds assets, scripts and documentation of a [Lubuntu](https://lubuntu
 - start Firefox
 - create and organize bookmarks as you want them to appear to users
 - close Firefox
-- launch the administration application _Baleinos admin app_ and click on _transférer les marque-pages_ button
+- launch the administration application _Balenos admin app_ and click on _transférer les marque-pages_ button
 
 ## How to contribute ❤️
 

@@ -4,7 +4,7 @@ set -e
 USER_NAME=personne
 PASSWORD=$USER_NAME
 
-echo "// Welcome to Baleinos installation 🐳"
+echo "// Welcome to Balenos installation 🐳☀️"
 
 echo "Remplace Firefox par Firefox-esr"
 firefox_version=$(firefox --version)
@@ -41,8 +41,8 @@ Session=Lubuntu
 sudo cp -f sddm.conf /etc/sddm.conf
 
 echo "copy assets, and set rights..."
-sudo mkdir -p /home/$USER_NAME/baleinos-assets
-sudo cp assets/* /home/$USER_NAME/baleinos-assets/
+sudo mkdir -p /home/$USER_NAME/balenos-assets
+sudo cp assets/* /home/$USER_NAME/balenos-assets/
 sudo cp assets/user-*.sh /home/$USER_NAME/
 sudo chown -R $USER_NAME:$USER_NAME /home/$USER_NAME/
 sudo chmod +x /home/$USER_NAME/user-install.sh
@@ -55,13 +55,13 @@ echo "Firefox policies"
 sudo mkdir -p /etc/firefox/policies
 sudo cp assets/firefox-policies.json /etc/firefox/policies/policies.json
 
-# Baleinos Admin tool
+# Balenos Admin tool
 sudo apt install -y python3-pip
 sudo apt install -y python3-venv
 sudo apt install libxcb-cursor0
-chmod +x /home/$SUDO_USER/baleinos/admin-assets/baleinos-admin-app/start_baleinos_admin_tool.sh
-cp admin-assets/baleinos-admin-app.desktop /home/$SUDO_USER/Desktop
-chmod +x /home/$SUDO_USER/Desktop/baleinos-admin-app.desktop
+chmod +x /home/$SUDO_USER/balenos/admin-assets/balenos-admin-app/start_balenos_admin_tool.sh
+cp admin-assets/balenos-admin-app.desktop /home/$SUDO_USER/Desktop
+chmod +x /home/$SUDO_USER/Desktop/balenos-admin-app.desktop
 
 echo "Execute configuration scripts for the final user..."
 sudo -i -u $USER_NAME ./user-install.sh
