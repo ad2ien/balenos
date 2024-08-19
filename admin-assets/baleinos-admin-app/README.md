@@ -18,6 +18,7 @@ By running [./start_baleinos_admin_tool.sh](start_baleinos_admin_tool.sh) after 
 ## TODO
 
 - [ ] doc inside the app
+- [ ] better way to input sudo pw
 - [ ] white or black list
 - [ ] icon
 - [ ] emojis on lubuntu 😿

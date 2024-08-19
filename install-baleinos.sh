@@ -48,6 +48,9 @@ sudo chown -R $USER_NAME:$USER_NAME /home/$USER_NAME/
 sudo chmod +x /home/$USER_NAME/user-install.sh
 sudo chmod +x /home/$USER_NAME/user-config-firefox.sh
 
+echo "  Fix emoji for monospace font"
+sudo cp ./assets/00-emoji.conf /etc/fonts/conf.d
+
 echo "Firefox policies"
 sudo mkdir -p /etc/firefox/policies
 sudo cp assets/firefox-policies.json /etc/firefox/policies/policies.json
