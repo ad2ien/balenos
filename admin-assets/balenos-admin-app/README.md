@@ -19,9 +19,9 @@ By running [./start_balenos_admin_tool.sh](start_balenos_admin_tool.sh) after `c
 
 - [ ] doc inside the app
 - [ ] better way to input sudo pw
-- [ ] white or black list
 - [ ] icon
-- [ ] emojis on lubuntu 😿
+- [ ] emojis on the UI 😿
 - [ ] quit / about menu
-- [ ] name instead of "python" in task bar
+- [ ] app name instead of "python" in task bar
 - [ ] separate repo : test, lint, releases...
+- [ ] admin should be able to backup and restore a config

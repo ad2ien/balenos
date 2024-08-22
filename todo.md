@@ -4,9 +4,10 @@
 
 - [x] how to contribute
 - [ ] Logo and minimum graphics for the project
-- [ ] Register to Adullact catalog
+- [x] Register to Adullact catalog
 - [ ] why Balenos and why the name should change
 - [ ] ransacking tests
+- [ ] talk about [existing solutions](https://www.how2shout.com/tools/free-open-source-linux-kiosk-distros-browsers.html) and why they don't totally fit
 
 ### Admin config
 
@@ -28,6 +29,7 @@
 - [ ] firefox search drop down relou
 - [ ] Install extension with policies <https://mozilla.github.io/policy-templates/#extensions>
 - [ ] white et black list avec policies
+  - <https://doc.ubuntu-fr.org/tutoriel/comment_mettre_en_place_un_controle_parental>
 
 ## Config linux session
 
