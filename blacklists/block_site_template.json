@@ -1,0 +1,45 @@
+{
+  "blocked": [
+  ],
+  "close": 0,
+  "contextmenu-frame": true,
+  "contextmenu-pause": true,
+  "contextmenu-resume": true,
+  "contextmenu-top": true,
+  "crate": 1,
+  "css": "",
+  "disable-actions-options": true,
+  "disable-actions-page": true,
+  "initialBlock": true,
+  "initialBlockCurrent": true,
+  "last-update": 1724225293524,
+  "map": {},
+  "message": "",
+  "no-password-on-add": false,
+  "notes": {
+  },
+  "notification": true,
+  "pause-periods": [
+    5,
+    10,
+    15,
+    30,
+    60,
+    360,
+    1440,
+    -1
+  ],
+  "redirect": "",
+  "reverse": false,
+  "schedule": {
+    "times": {}
+  },
+  "schedule-offset": 0,
+  "schedules": {},
+  "sha256": "",
+  "timeout": 60,
+  "title": true,
+  "wrong": 1,
+  "managed.storage.overwrite.on.start": false,
+  "guid": "3c517092-f1cc-4f8d-9e52-ff567a5e5c8c"
+}
