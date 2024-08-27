@@ -46,7 +46,6 @@ sudo cp assets/* /home/$USER_NAME/balenos-assets/
 sudo cp assets/user-*.sh /home/$USER_NAME/
 sudo chown -R $USER_NAME:$USER_NAME /home/$USER_NAME/
 sudo chmod +x /home/$USER_NAME/user-install.sh
-sudo chmod +x /home/$USER_NAME/user-config-firefox.sh
 
 echo "  Fix emoji for monospace font"
 sudo cp ./assets/00-emoji.conf /etc/fonts/conf.d
@@ -65,7 +64,6 @@ chmod +x /home/$SUDO_USER/Desktop/balenos-admin-app.desktop
 
 echo "Execute configuration scripts for the final user..."
 sudo -i -u $USER_NAME ./user-install.sh
-sudo -i -u $USER_NAME ./user-config-firefox.sh
 
 echo "Install control parental..."
 sudo apt install -y gdebi
