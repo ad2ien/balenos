@@ -55,6 +55,10 @@ Ce dépôt contient les assets, scripts et documentation d'une customisation de 
 - fermez Firefox
 - lancez l'application d'administration _Balenos admin app_ et cliquez sur le bouton _transférer les marque-pages_
 
+### Configurer le contrôle parental
+
+Le script d'installation installe un système de contrôle parental : <https://gitlab.com/ctparentalgroup/CTparental/>. Il est possible d'affiner la blacklist depuis là : <https://admin.ct.local/>
+
 ## Comment contribuer ❤️
 
 - Une étoile me ferait déjà bien plaisir ⭐

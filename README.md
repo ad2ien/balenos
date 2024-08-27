@@ -59,6 +59,10 @@ This repo holds assets, scripts and documentation of a [Lubuntu](https://lubuntu
 - close Firefox
 - launch the administration application _Balenos admin app_ and click on _transférer les marque-pages_ button
 
+### Configure Parental control
+
+The install script installs a parental control système : <https://gitlab.com/ctparentalgroup/CTparental/>. It's possible to fine tune the blacklist from there : <https://admin.ct.local/>
+
 ## How to contribute ❤️
 
 - A star would cheer me up ⭐

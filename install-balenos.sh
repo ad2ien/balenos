@@ -67,4 +67,9 @@ echo "Execute configuration scripts for the final user..."
 sudo -i -u $USER_NAME ./user-install.sh
 sudo -i -u $USER_NAME ./user-config-firefox.sh
 
+echo "Install control parental..."
+sudo apt install -y gdebi
+curl -O https://gitlab.com/-/project/6842998/uploads/dbd65c415b9c6de320a60204744b12c7/ctparental-min-nginx_debian11_ubuntu21.10_5.1.15-1.0_all.deb
+sudo gdebi ctparental-min-nginx_debian11_ubuntu21.10_5.1.15-1.0_all.deb
+
 echo "// Fin, so far... 👋"
