@@ -59,6 +59,10 @@ Ce dépôt contient les assets, scripts et documentation d'une customisation de 
 
 Le script d'installation installe un système de contrôle parental : <https://gitlab.com/ctparentalgroup/CTparental/>. Il est possible d'affiner la blacklist depuis là : <https://admin.ct.local/>
 
+## Point de vue juridique
+
+L'avis de la Quadrature du net à ce sujet : <https://www.laquadrature.net/2018/01/31/guide_internet_libre_acces/>
+
 ## Comment contribuer ❤️
 
 - Une étoile me ferait déjà bien plaisir ⭐

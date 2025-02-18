@@ -63,6 +63,10 @@ This repo holds assets, scripts and documentation of a [Lubuntu](https://lubuntu
 
 The install script installs a parental control système : <https://gitlab.com/ctparentalgroup/CTparental/>. It's possible to fine tune the blacklist from there : <https://admin.ct.local/>
 
+## Legal prospective
+
+What the _Quadrature du Net_ has to say about it : <https://www.laquadrature.net/2018/01/31/guide_internet_libre_acces/>
+
 ## How to contribute ❤️
 
 - A star would cheer me up ⭐
